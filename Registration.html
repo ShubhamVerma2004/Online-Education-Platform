@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register Form</title>
+    <!-- Boxicons CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/Registration.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="nav">
+        <h1 class="logo">Online Education Platform</h1>
+        <div class="hamburger" id="hamburger">
+            <i class='bx bx-menu'></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Index.html#about">About Us</a></li>
+            <li><a href="Chat Suppor.html#chat">Chat Support</a></li>
+            <li><a href="VideoHome.html#video">Video</a></li>
+            <div class="auth-links">
+                <a href="#Login" class="login-btn">Log In</a>
+                <a href="#egistration" class="Registration-btn">Registration</a>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- Wrapper for Login/Register Form -->
+    <div class="wrapper">
+        <span class="rotate-bg"></span>
+        <span class="rotate-bg2"></span>
+
+        <!-- Login Form -->
+        <div class="form-box login" id="Login">
+            <h2 class="title animation" style="--i:0; --j:21">Login</h2>
+            <form action="#">
+                <div class="input-box animation" style="--i:1; --j:22">
+                    <input type="text" required>
+                    <label for="">Username</label>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box animation" style="--i:2; --j:23">
+                    <input type="password" required>
+                    <label for="">Password</label>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button type="submit" class="btn animation" style="--i:3; --j:24">Login</button>
+                <div class="linkTxt animation" style="--i:5; --j:25">
+                    <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Register Form -->
+        <div class="form-box register" id="Registration">
+            <h2 class="title animation" style="--i:17; --j:0">Sign Up</h2>
+            <form action="#">
+                <div class="input-box animation" style="--i:18; --j:1">
+                    <input type="text" required>
+                    <label for="">Username</label>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box animation" style="--i:19; --j:2">
+                    <input type="email" required>
+                    <label for="">Email</label>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-box animation" style="--i:20; --j:3">
+                    <input type="password" required>
+                    <label for="">Password</label>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button type="submit" class="btn animation" style="--i:21;--j:4">Sign Up</button>
+                <div class="linkTxt animation" style="--i:22; --j:5">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Footer Left: Logo and Description -->
+            <div class="footer-left">
+                <img src="image/logo.png" alt="Logo" class="footer-logo">
+                <p>Our online education platform offers a flexible and interactive learning experience for students of all levels. With expert-led courses, engaging video lessons, and self-paced learning options, we make education accessible anytime, anywhere. Enhance your skills and knowledge with our user-friendly and innovative digital learning environment.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/shubhamverma2995/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shubham-verma-4772a92a3/" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.youtube.com/" class="social-icon" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Footer Right: Quick Links -->
+            <div class="footer-right">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Index.html#about">About Us</a></li>
+                    <li><a href="Chat Suppor.html#chat">Chat Support</a></li>
+                    <li><a href="VideoHome.html#video">Video</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom: Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; Online Education Platform. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/Registration.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Support</title>
+  <link rel="stylesheet" href="css/Chat.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+      <a href="Index.html" style="text-decoration: none;" ><div class="logo">Online Platform</div></a>
+      <div class="menu">
+        <a href="Index.html">Home</a>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Left Sidebar -->
+      <aside class="sidebar">
+        <button id="newChat">New Chat</button>
+        <div class="history">
+          <h3>History</h3>
+          <ul id="historyList">
+            <!-- Chat history will be dynamically added here -->
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Chat Area -->
+      <section class="chat-area">
+        <div class="chat-messages" id="chatMessages">
+          <!-- Chat messages will be dynamically added here -->
+        </div>
+        <div class="chat-input">
+          <input type="text" id="chatInput" placeholder="Type a message...">
+          <button id="sendButton">Send</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/chat.js"></script>
+</body>
+</html>

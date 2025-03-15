@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+    <link rel="stylesheet" href="css/video.css" />
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Top Navigation Bar -->
+      <nav class="top-nav">
+        <div class="left-section">
+          <i class="fas fa-bars menu-icon" id="menu-toggle"></i>
+          <a href="Index.html" style="text-decoration: none">
+            <div class="logo">Online Platform</div>
+          </a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="user-actions">
+          <i class="fas fa-video"></i>
+          <i class="fas fa-bell"></i>
+          <img src="image/profile.jpeg" alt="Profile" class="profile-pic" />
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Vertical Navigation Bar -->
+        <nav class="vertical-nav" id="vertical-nav">
+          <ul>
+            <li>
+              <a href="VideoHome.html"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-fire"></i> Trending</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-users"></i> Subscriptions</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-folder"></i> Library</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-history"></i> History</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Video Player Section -->
+        <div class="video-player-section">
+          <!-- Video Player -->
+          <div class="video-player">
+            <video
+              controls
+              width="100%"
+              height="100%"
+              id="main-video-player"
+              muted
+            >
+              <source
+                src="video/7583733-hd_1920_1080_25fps.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <!-- Video Title -->
+          <h1 class="video-title" id="video-title">This is the Video Title</h1>
+
+          <!-- Video Actions -->
+          <div class="video-actions">
+            <div class="views-time">
+              <span>1,000,000 views</span>
+              <span>•</span>
+              <span>1 day ago</span>
+            </div>
+            <div class="action-buttons">
+              <button><i class="fas fa-thumbs-up"></i> 10K</button>
+              <button><i class="fas fa-thumbs-down"></i> 100</button>
+              <button><i class="fas fa-share"></i> Share</button>
+              <button><i class="fas fa-save"></i> Save</button>
+            </div>
+          </div>
+
+          <!-- Channel Details -->
+          <div class="channel-details">
+            <img
+              src="image/Chanel.jpg"
+              alt="Channel Icon"
+              class="channel-icon"
+            />
+            <div class="channel-info">
+              <h3 class="channel-name">SHMK Learning</h3>
+              <p class="subscribers">1M subscribers</p>
+            </div>
+            <button class="subscribe-btn">Subscribe</button>
+          </div>
+
+          <!-- Video Description -->
+          <div class="video-description">
+            <p>
+              This is the video description. It can be a long paragraph
+              explaining the video content. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.
+            </p>
+          </div>
+
+          <!-- Comments Section -->
+          <div class="comments-section">
+            <h3>Comments • 1,000</h3>
+            <div class="comment">
+              <img
+                src="image/pic.png"
+                alt="User Icon"
+                class="comment-user-icon"
+              />
+              <div class="comment-text">
+                <h4>User Name</h4>
+                <p>
+                  This is a comment. It can be a long paragraph or just a few
+                  words.
+                </p>
+              </div>
+            </div>
+            <div class="comment">
+              <img
+                src="image/pic.png"
+                alt="User Icon"
+                class="comment-user-icon"
+              />
+              <div class="comment-text">
+                <h4>Another User</h4>
+                <p>This is another comment.</p>
+              </div>
+            </div>
+            <!-- Add more comments as needed -->
+          </div>
+        </div>
+
+        <!-- Recommended Videos Section -->
+        <div class="recommended-videos">
+          <h3>Recommended Videos</h3>
+          <!-- Recommended Video 1 -->
+          <div
+            class="video-item"
+            onclick="changeVideo('video/7583733-hd_1920_1080_25fps.mp4', 'Boost Your Learning Efficiency')"
+          >
+            <video controls width="150" height="90" muted>
+              <source
+                src="video/7583733-hd_1920_1080_25fps.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <div class="video-details">
+              <h4>Boost Your Learning Efficiency</h4>
+              <p>Smart Study Hacks • 100 views • 1 day ago</p>
+            </div>
+          </div>
+          <!-- Recommended Video 2 -->
+          <div
+            class="video-item"
+            onclick="changeVideo('video/1596891-hd_1920_1080_30fps.mp4', ' A Day in the Library')"
+          >
+            <video controls width="150" height="90" muted>
+              <source
+                src="video/1596891-hd_1920_1080_30fps.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <div class="video-details">
+              <h4> A Day in the Library</h4>
+              <p>Exploring Knowledge: • 200 views • 2 days ago</p>
+            </div>
+          </div>
+          <div
+          class="video-item"
+          onclick="changeVideo('video/3195392-uhd_3840_2160_25fps.mp4', 'Fun Learning Activities for Kids')"
+        >
+          <video controls width="150" height="90" muted>
+            <source
+              src="video/3195392-uhd_3840_2160_25fps.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-details">
+            <h4>Fun Learning Activities for Kids</h4>
+            <p>Creative Minds:  • 200 views • 1 days ago</p>
+          </div>
+        </div>
+        <div
+        class="video-item"
+        onclick="changeVideo('video/4769557-uhd_4096_2160_25fps.mp4', 'Mastering Exams with Effective Notes')"
+      >
+        <video controls width="150" height="90" muted>
+          <source
+            src="video/4769557-uhd_4096_2160_25fps.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-details">
+          <h4>Mastering Exams with Effective Notes</h4>
+          <p>Focused Study • 100 views • 2 days ago</p>
+        </div>
+      </div>
+      <div
+      class="video-item"
+      onclick="changeVideo('video/7583733-hd_1920_1080_25fps.mp4', 'Smart Classroom Technology in Action')"
+    >
+      <video controls width="150" height="90" muted>
+        <source
+          src="video/7583733-hd_1920_1080_25fps.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-details">
+        <h4>Smart Classroom Technology in Action</h4>
+        <p>Interactive Learning • 200 views • 2 days ago</p>
+      </div>
+    </div>
+    <div
+    class="video-item"
+    onclick="changeVideo('video/853919-hd_1920_1080_25fps.mp4', 'Smart Classroom Technology in Action')"
+  >
+    <video controls width="150" height="90" muted>
+      <source
+        src="video/853919-hd_1920_1080_25fps.mp4"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-details">
+      <h4>Smart Classroom Technology in Action </h4>
+      <p>Interactive Learning • 200K views • 2 days ago</p>
+    </div>
+  </div>
+          <!-- Add more recommended videos as needed -->
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/video.js"></script>
+  </body>
+</html>
