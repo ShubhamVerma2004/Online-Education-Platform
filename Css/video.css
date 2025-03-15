@@ -1,0 +1,367 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #c430d7;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    padding: 8px;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 20px 0 0 20px;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #e0e0e0;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-actions i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Vertical Navigation Bar */
+.vertical-nav {
+    width: 200px;
+    background-color: #c330d77e;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: calc(100vh - 60px);
+    z-index: 99;
+}
+
+.vertical-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vertical-nav ul li {
+    margin-bottom: 15px;
+}
+
+.vertical-nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.vertical-nav ul li a:hover {
+    color: #424242;
+}
+
+/* Video Player Section */
+.video-player-section {
+    flex: 2;
+    margin-left: 250px; /* Adjust based on the width of the vertical nav */
+}
+
+.video-player {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video-title {
+    margin: 15px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.video-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.views-time {
+    color: #777;
+}
+
+.action-buttons button {
+    background-color: transparent;
+    border: none;
+    color: #777;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.action-buttons button:hover {
+    color: #333;
+}
+
+.channel-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.channel-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.channel-info {
+    flex: 1;
+}
+
+.channel-name {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.subscribers {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.subscribe-btn {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.subscribe-btn:hover {
+    background-color: #cc0000;
+}
+
+.video-description {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.video-description p {
+    margin: 0;
+    color: #333;
+}
+
+/* Comments Section */
+.comments-section {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.comments-section h3 {
+    margin: 0 0 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.comment {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.comment-user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.comment-text h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.comment-text p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Recommended Videos Section */
+.recommended-videos {
+    flex: 1;
+}
+
+.recommended-videos h3 {
+    margin: 0 0 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.video-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.video-item:hover {
+    transform: scale(1.02);
+}
+
+.video-item video {
+    width: 150px;
+    height: 90px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.video-details h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.video-details p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .vertical-nav {
+        transform: translateX(-250px);
+    }
+
+    .vertical-nav.active {
+        transform: translateX(0);
+    }
+
+    .video-player-section {
+        margin-left: 0;
+    }
+
+    .video-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .channel-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .subscribe-btn {
+        width: 100%;
+    }
+
+    .video-item {
+        flex-direction: column;
+    }
+
+    .video-item video {
+        width: 100%;
+        height: auto;
+    }
+}
+.vertical-nav {
+    width: 200px;
+    background-color: #c330d77e;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: calc(100vh - 60px);
+    z-index: 99;
+    transform: translateX(0); /* Default: visible */
+}
+
+.vertical-nav.collapsed {
+    transform: translateX(-250px); /* Hide the vertical nav */
+}
